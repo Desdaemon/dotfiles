@@ -1,0 +1,75 @@
+// carpalx layouts
+// see http://mkweb.bcgsc.ca/carpalx/
+
+// xkb keymap prepared by sven moritz hallberg <pesco@khjk.org>
+// see http://www.khjk.org/log/2011/jan/carpalx.html
+// copyright 2011, isc license
+
+
+// to use, copy to /usr/share/X11/xkb/symbols/carpalx and add the following
+// lines to /usr/share/X11/xkb/symbols.dir:
+//
+//     -dp----- a------- carpalx(qgmlwb)
+//     --p----- a------- carpalx(qgmlwy)
+//     --p----- a------- carpalx(qfmlwy)
+//     --p----- a------- carpalx(qwkrfy)
+//     --p----- a------- carpalx(qwyrfm)
+//     --p----- a------- carpalx(tnwmlc)
+//
+// then load with, e.g.
+//
+//     setxkbmap carpalx                            # defaults to QGMLWB
+//     setxkbmap -layout carpalx -variant qwkrfy    # to select other variants
+
+// duality layouts
+// based off of carpalx xkb files
+// layout: http://mkweb.bcgsc.ca/carpalx/
+// original file made by sven moritz hallberg <pesco@khjk.org>
+// http://www.khjk.org/log/2011/jan/carpalx.html
+
+// installing
+// $ sudo cp duality.xkb /usr/share/X11/xkb/symbols/duality
+// $ setxkbmap duality
+// $ setxkbmap -layout us,duality
+
+default
+partial alphanumeric_keys
+xkb_symbols "duality" {
+
+    include "latin"
+    include "latin(nodeadkeys)"
+    name[Group1] = "Duality (English + VN Telex)";
+
+    key <AD01> { [         p,          P ] };
+    key <AD02> { [         m,          M ] };
+    key <AD03> { [         f,          F ] };
+    key <AD04> { [         j,          J ] };
+    key <AD05> { [         x,          X ] };
+    key <AD06> { [         q,          Q ] };
+    key <AD07> { [         w,          W ] };
+    key <AD08> { [         o,          O ] };
+    key <AD09> { [         u,          U ] };
+    key <AD10> { [ semicolon,      colon ] };
+
+    key <AC01> { [         c,          C ] };
+    key <AC02> { [         n,          N ] };
+    key <AC03> { [         s,          S ] };
+    key <AC04> { [         h,          H ] };
+    key <AC05> { [         r,          R ] };
+    key <AC06> { [         d,          D ] };
+    key <AC07> { [         t,          T ] };
+    key <AC08> { [         a,          A ] };
+    key <AC09> { [         e,          E ] };
+	key <AC10> { [         i,          I ] };
+
+    key <AB01> { [         y,          Y ] };
+    key <AB02> { [         v,          V ] };
+    key <AB03> { [         b,          B ] };
+    key <AB04> { [         l,          L ] };
+    key <AB05> { [         z,          Z ] };
+    key <AB06> { [         g,          G ] };
+    key <AB07> { [         k,          K ] };
+
+};
+
+

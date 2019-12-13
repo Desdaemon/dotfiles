@@ -27,6 +27,7 @@ syntax on
 call plug#begin('~/.vim/plugged')
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
+Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
 " pager for man
