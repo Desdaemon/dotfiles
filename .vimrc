@@ -1,6 +1,9 @@
 colorscheme elflord
-set tabstop=4 " visual spaces
-set softtabstop=4 " spaces in tab when editing
+set tabstop=8 " visual spaces
+set softtabstop=0 " spaces in tab when editing
+set expandtab
+set shiftwidth=4
+set smarttab
 set number " line number
 set showcmd " show command in bottom bar
 filetype indent on " load filetype-specific indent files
@@ -28,6 +31,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " pager for man
