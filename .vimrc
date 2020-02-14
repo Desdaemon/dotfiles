@@ -35,4 +35,4 @@ Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " pager for man
-let $PAGER=''
+" let $PAGER=''
