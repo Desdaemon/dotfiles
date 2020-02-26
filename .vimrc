@@ -32,6 +32,7 @@ Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-fugitive'
+Plug 'raimondi/delimitmate'
 call plug#end()
 
 " pager for man
